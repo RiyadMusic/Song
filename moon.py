@@ -29,12 +29,12 @@ async def start_(client: Client, message: Message):
     f"""● **Selam** {message.from_user.mention}\n\n**» Ben müzik indirme botuyum istediğin müziği indirebilirim**\n\n**✅ Yardım için** /help **komutunu kullanın**""",
         reply_markup=InlineKeyboardMarkup(
             [[
-                    InlineKeyboardButton('🇹🇷 𝖡𝖾𝗇𝗂 𝖦𝗋𝗎𝖻𝖺 𝖤𝗄𝗅𝖾 🇹🇷', url=f'http://t.me/Mp3MuzikBot?startgroup=new'),
+                    InlineKeyboardButton('🇬🇪 Məni Qrupa At 🇦🇿', url=f'http://t.me/ZionSongBot?startgroup=new'),
                   ],[
-                    InlineKeyboardButton('✅ 𝖣𝖾𝗌𝗍𝖾𝗄 ', url=f'https://t.me/StarBotDestek'),
-                    InlineKeyboardButton('⏳ 𝖪𝖺𝗇𝖺𝗅 ', url=f'https://t.me/StarBotKanal')
+                    InlineKeyboardButton('✅ 𝖣əstək ', url=f'https://t.me/ZionTeammm'),
+                    InlineKeyboardButton('⏳ 𝖪𝖺𝗇𝖺𝗅 ', url=f'https://t.me/RiyaddBlogg')
                   ],[
-                    InlineKeyboardButton('🧑🏻‍💻 ɢɪᴛʜᴜʙ ᴋᴀʏɴᴀᴋ ᴋᴏᴅᴜ 🧑🏻‍💻', url=f'https://github.com/MehmetAtes21/Song')
+                    InlineKeyboardButton('🧑🏻‍💻 ɢɪᴛʜᴜʙ ᴋᴀʏɴᴀᴋ ᴋᴏᴅᴜ 🧑🏻‍💻', url=f'https://github.com/RiyadMusic/Song')
                 ]
             ]
         )
@@ -50,12 +50,12 @@ def help(client, message):
         quote=False,
         reply_markup=InlineKeyboardMarkup(
             [[
-                    InlineKeyboardButton('🇹🇷 𝖡𝖾𝗇𝗂 𝖦𝗋𝗎𝖻𝖺 𝖤𝗄𝗅𝖾 🇹🇷', url=f'http://t.me/Mp3SongBot?startgroup=new'),
+                    InlineKeyboardButton('🇬🇪 Məni Qrupa At 🇦🇿', url=f'http://t.me/ZionSongBot?startgroup=new'),
                   ],[
-                    InlineKeyboardButton('✅ 𝖣𝖾𝗌𝗍𝖾𝗄', url=f'https://t.me/StarBotDestek'),
-                    InlineKeyboardButton('⏳ 𝖪𝖺𝗇𝖺𝗅', url=f'https://t.me/StarBotKanal')
+                    InlineKeyboardButton('✅ Dəstək', url=f'https://t.me/ZionTeammm'),
+                    InlineKeyboardButton('⏳ 𝖪𝖺𝗇𝖺𝗅', url=f'https://t.me/RiyaddBlogg')
                   ],[
-                    InlineKeyboardButton('🧑🏻‍💻 ɢɪᴛʜᴜʙ ᴋᴀʏɴᴀᴋ ᴋᴏᴅᴜ 🧑🏻‍💻', url=f'https://github.com/MehmetAtes21/Song')
+                    InlineKeyboardButton('🧑🏻‍💻 ɢɪᴛʜᴜʙ ᴋᴀʏɴᴀᴋ ᴋᴏᴅᴜ 🧑🏻‍💻', url=f'https://github.com/RiyaddBlogg/Song')
                 ]
             ]
         )
@@ -64,7 +64,7 @@ def help(client, message):
 
 @bot.on_message(filters.command("alive") & filters.user(Config.BOT_OWNER))
 async def live(client: Client, message: Message):
-    livemsg = await message.reply_text('`Merhaba Sahip 🌟`')
+    livemsg = await message.reply_text('`Salam Sahip 🌟`')
     
 #musik indirme#
 
