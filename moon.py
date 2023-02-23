@@ -24,7 +24,7 @@ bot = Client(
 
 @bot.on_message(filters.command(['start']))
 async def start_(client: Client, message: Message):
-    await message.reply_sticker("CAACAgQAAxkBAAI8bmKIvgnlJyCrq9HIxSvCZCbm5CEjAAIaEAACpvFxHg-Z648-SCRWJAQ")
+    await message.reply_sticker("https://images.app.goo.gl/wm8cyhB3gsVvfgCQA")
     await message.reply_text(
     f"""● **Selam** {message.from_user.mention}\n\n**» Ben müzik indirme botuyum istediğin müziği indirebilirim**\n\n**✅ Yardım için** /help **komutunu kullanın**""",
         reply_markup=InlineKeyboardMarkup(
